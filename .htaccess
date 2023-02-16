@@ -1,0 +1,8 @@
+# Принудительный редирект
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond %{REQUEST_URI} !\.(js|css|jpe?g|png)$ [NC]
+    RewriteRule ^(.+)$ index.php [QSA,L]
+</IfModule>
+

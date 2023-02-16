@@ -1,0 +1,202 @@
+@import "/css/reset.css";
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 730px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background: cornflowerblue;
+}
+
+header a {
+    color: #fff;
+    margin: 10px 20px;
+}
+
+form {
+    /*border: 1px solid purple;*/
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.group {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px 0;
+}
+
+.input {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    font-size: 18px;
+}
+
+.input.error {
+    border-color: red;
+}
+
+.form-btn {
+    display: block;
+    padding: 7px 20px;
+    background: cornflowerblue;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 20px 0 40px 0;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.msg {
+    text-align: center;
+}
+
+.record {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.record > .children {
+    padding-left: 20px;
+    overflow: hidden;
+    transition: 300ms ease;
+}
+
+.children {
+    height: 0;
+}
+
+.record.active > .children {
+    height: auto;
+}
+
+.record .record {
+    margin: 10px 0;
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more {
+    border: 1px solid green;
+    cursor: pointer;
+    padding: 0 5px;
+    height: 100%;
+    width: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.edit {
+    font-size: 14px;
+    border: 1px solid blue;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.delete {
+    font-size: 14px;
+    border: 1px solid red;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.add {
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid green;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.title {
+    cursor: pointer;
+}
+
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+}
+
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+
+    max-height: 400px;
+    min-height: 100px;
+}
+
+.left-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20vw;
+    height: 400px;
+    background: #fff;
+    border: 2px solid mediumpurple;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+
